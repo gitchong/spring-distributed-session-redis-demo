@@ -1,6 +1,9 @@
 
 server:
   port: 8080
+  #session 过期时间
+  session:
+    timeout: 600  #单位s
 
 spring:
   #配置redis
@@ -12,4 +15,3 @@ spring:
     store-type: redis
     redis:
       flush-mode: on_save # Sessions 刷新模式
-
