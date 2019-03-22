@@ -1,0 +1,15 @@
+
+server:
+  port: 8080
+
+spring:
+  #配置redis
+  redis:
+    host: localhost
+    port: 6379
+  # spring session 配置
+  session:
+    store-type: redis
+    redis:
+      flush-mode: on_save # Sessions 刷新模式
+
